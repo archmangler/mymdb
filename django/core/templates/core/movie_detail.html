@@ -1,4 +1,4 @@
-{% extends 'base.html ' %}
+{% extends 'base.html' %}
 
 {% block title %}
     {{ object.title }} - {{ block.super }}
@@ -14,7 +14,7 @@
 {% block sidebar %}
 <div>
  This movie is rated:
-  <span class="badge badge primary">
+  <span class="badge badge-primary">
     {{ object.get_rating_display }}
   </span>
 </div>
