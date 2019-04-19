@@ -18,6 +18,8 @@ from django.urls import path, include
 
 import core.urls
 
+handler404="core/templates/404.html"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(
