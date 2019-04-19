@@ -29,6 +29,12 @@ class Movie(models.Model):
     website = models.URLField(
         blank=True)
 
+#A Django model may optionally have an inner class called Meta class, which lets us specify
+#information about a Model. Let's add a class with an ordering attribute:
+
+    class Meta:
+     ordering = ('-year','title')
+
     def __str__(self):
         return '{} ({})'.format(
             self.title, self.year)
