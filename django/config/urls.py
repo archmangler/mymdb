@@ -18,7 +18,7 @@ from django.urls import path, include
 
 import core.urls
 
-handler404="core/templates/404.html"
+handler404="core/templates/core/404.html"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
